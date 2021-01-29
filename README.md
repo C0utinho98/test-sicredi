@@ -1,46 +1,37 @@
-# Getting Started with Create React App
+## `yarn`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Instala as dependências da aplicação.
 
-## Available Scripts
+## `yarn start`
 
-In the project directory, you can run:
+Executar a aplicação em desenvolvimento.
 
-### `yarn start`
+Abra no seu navegador [http://localhost:3000](http://localhost:3000).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## `yarn test`
 
-### `yarn test`
+Executa os testes unitários da aplicação.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## `yarn test --coverage --watchAll false`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Executa os testes unitários da aplicação e gera o arquivo de cobertura de teste.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para visualizar acesse a pasta: `coverage/lcov-report/index.html`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## `yarn build`
 
-### `yarn eject`
+Constrói aplicação para produção.\
+Execute no terminal os seguintes comandos para executar a aplicação.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+`yarn global add serve`\
+`serve -s build`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Abra no seu navegador [http://localhost:5000](http://localhost:5000).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## `Redux DevTools`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+A aplicação utiliza a ferramenta Redux DevTools para monitorar os estados da aplicação.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Acesse [DevTools](https://github.com/reduxjs/redux-devtools) para mais informações.
