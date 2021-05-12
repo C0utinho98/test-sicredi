@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { format } from 'date-fns';
-import ptBr from 'date-fns/locale/pt';
+// import { format } from 'date-fns';
+// import ptBr from 'date-fns/locale/pt';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { Pagination, Button, Accordion } from '../../components';
@@ -35,10 +35,10 @@ const Main: React.FC = () => {
       );
   }, [dispatch]);
 
-  const displayDays = (date: Date) => {
-    const localDate = new Date(date);
-    return format(localDate, "'Dia' dd 'de' MMMM 'de' yyyy", { locale: ptBr });
-  };
+  // const displayDays = (date: Date) => {
+  //   const localDate = new Date(date);
+  //   return format(localDate, "'Dia' dd 'de' MMMM 'de' yyyy", { locale: ptBr });
+  // };
 
   return (
     <Container>
