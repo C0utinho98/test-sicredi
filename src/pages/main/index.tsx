@@ -48,7 +48,7 @@ const Main: React.FC = () => {
             <Accordion title={el.name} key={el.id}>
               <Content>
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
-                  <span>{`Data de criação: ${displayDays(el.createdAt)}`}</span>
+                  <span>Data de criação:</span>
                   <span>{`Nome: ${el.name}`}</span>
                   <span>{`Tipo: ${el.type}`}</span>
                 </div>
